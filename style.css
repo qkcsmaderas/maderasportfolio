@@ -1,0 +1,109 @@
+body {
+  background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #000000);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glass Navbar */
+.glass-nav {
+  background: rgba(0, 0, 0, 0.4) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Navbar Links Glow */
+.navbar-nav .nav-link {
+  color: #fff !important;
+  transition: all 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: #a0e9ff !important;
+  text-shadow: 0 0 8px #00f0ff, 0 0 16px #00f0ff;
+}
+.navbar-nav .nav-link.active {
+  color: #ffdd57 !important;
+  text-shadow: 0 0 10px #ffdd57, 0 0 20px #ffdd57;
+}
+
+/* Contact Button Glow */
+.btn-glow {
+  background-color: #6f4e37;
+  color: #fff;
+  border-radius: 30px;
+  padding: 8px 20px;
+  box-shadow: 0 0 10px #ffdd57, 0 0 20px #ffdd57;
+}
+.btn-glow:hover {
+  background-color: #5a3d2b;
+  box-shadow: 0 0 20px #00f0ff, 0 0 40px #00f0ff;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+/* Text Glow */
+.highlight { color: #ffdd57; font-weight: 600; }
+.text-neon { color: #a0e9ff; text-shadow: 0 0 8px #00f0ff, 0 0 16px #00f0ff; }
+
+/* Social Icons */
+.icon-link {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.icon-link:hover {
+  color: #ffdd57;
+  text-shadow: 0 0 10px #ffdd57;
+}
+
+/* Buttons */
+.btn-brown {
+  background-color: #6f4e37;
+  color: #fff;
+  border-radius: 30px;
+}
+.btn-brown:hover { background-color: #5a3d2b; color: #fff; }
+
+/* Glass Cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+/* Service & Blog Cards */
+.service-card, .blog-card {
+  background: rgba(255, 255, 255, 0.07);
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover, .blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+}
